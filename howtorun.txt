@@ -1,0 +1,16 @@
+curl -X POST http://127.0.0.1:5000/predict_outcome -H "Content-Type: application/json" -d '{
+    "bowl_card": "Bouncer",
+    "shot_card": "Pull",
+    "timing": "Perfect"
+}'
+
+
+
+curl -X POST http://127.0.0.1:5000/super_over -H "Content-Type: application/json" -d '{
+    "team1_name": "India",
+    "team2_name": "Australia",
+    "team1_score": 20
+}'
+for unittest
+
+python -m unittest test_outcome_chart.py
